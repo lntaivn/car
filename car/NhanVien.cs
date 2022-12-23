@@ -49,18 +49,13 @@ namespace car
             list_nhanVien.Columns[1].HeaderText = "TÊN PHÂN QUYỀN";
             list_nhanVien.AllowUserToAddRows = false;
             list_nhanVien.EditMode = DataGridViewEditMode.EditProgrammatically;
-
+            //saaaaaa
             
         }
 
         private void btnOut_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void NhanVien_Load(object sender, EventArgs e)
@@ -114,6 +109,11 @@ namespace car
         }
 
         private void cb_chucVu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
         {
 
         }
