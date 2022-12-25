@@ -137,6 +137,7 @@
             this.btn_nhanVien.TabIndex = 5;
             this.btn_nhanVien.Text = "Nhân viên";
             this.btn_nhanVien.UseVisualStyleBackColor = false;
+            this.btn_nhanVien.Click += new System.EventHandler(this.btn_nhanVien_Click);
             // 
             // btn_khachHang
             // 
@@ -168,7 +169,7 @@
             this.btn_dangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dangXuat.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_dangXuat.Location = new System.Drawing.Point(332, 492);
+            this.btn_dangXuat.Location = new System.Drawing.Point(423, 518);
             this.btn_dangXuat.Name = "btn_dangXuat";
             this.btn_dangXuat.Size = new System.Drawing.Size(154, 48);
             this.btn_dangXuat.TabIndex = 4;
@@ -179,7 +180,7 @@
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(184, 218);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(287, 234);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
             this.gunaCirclePictureBox1.Size = new System.Drawing.Size(440, 278);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

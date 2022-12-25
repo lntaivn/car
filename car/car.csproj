@@ -68,6 +68,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="bo.cs" />
+    <Compile Include="help.cs" />
     <Compile Include="khachHang.cs">
       <SubType>Form</SubType>
     </Compile>

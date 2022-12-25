@@ -21,6 +21,11 @@ namespace car
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            help h = new help();
+            if (h.Checkper())
+                MessageBox.Show("quan ly");
+            else
+                MessageBox.Show("Nhan vien");
 
         }
 
@@ -37,6 +42,12 @@ namespace car
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_nhanVien_Click(object sender, EventArgs e)
+        {
+            NhanVien nhanVien = new NhanVien(); 
+            nhanVien.Show();
         }
     }
 }

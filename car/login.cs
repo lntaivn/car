@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,12 +13,15 @@ namespace car
 {
     public partial class login : Form
     {
-        connect tv_kn;
+        public static string ID_USER = "";
+        connect kn;
+        DataTable tb = new DataTable();
+
         public login()
         {
             InitializeComponent();
-            tv_kn = new connect();
-            if (tv_kn.Mo_KN_CSDL())
+            kn = new connect();
+            if (kn.Mo_KN_CSDL())
             {
                 //   MessageBox.Show("Mo Dc CSDL Roi","Thông Báo!!!");
                 //HienThiDL();
@@ -29,7 +33,33 @@ namespace car
             }
 
         }
-
+        private string getID(string username, string pass)
+        {
+            string id = "";
+            try
+            {
+                kn.Mo_KN_CSDL();
+                string str = "SELECT * FROM nhanVien WHERE emailnhanvien ='" + tb_tenDangNhap.Text.Trim() + "' and password='" + tb_matKhau.Text.Trim() + "'";
+                tb = kn.LayBang(str);
+                if (tb != null)
+                {
+                    foreach (DataRow dr in tb.Rows)
+                    {
+                        id = dr["maPhanQuyen"].ToString();
+                    }
+                    
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi xảy ra khi truy vấn dữ liệu hoặc kết nối với server thất bại !");
+            }
+            finally
+            {
+                kn.DongKN();
+            }
+            return id;
+        }
         private void btnOut_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -42,7 +72,18 @@ namespace car
 
         private void btn_dangNhap_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hhhh");
+            ID_USER = getID(tb_tenDangNhap.Text, tb_matKhau.Text);
+            if (ID_USER != "")
+            {
+                MainForm main = new MainForm();
+                main.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoảng và mật khẩu không đúng !");
+            }
+
         }
     }
 }

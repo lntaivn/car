@@ -32,15 +32,14 @@ namespace car
         }
         void HienThiDL()
         {
-          string str;
-          //  str = "SELECT * FROM nhanvien";
-           // DataTable bang = new DataTable();
-           // tb = kn.LayBang(str);
-            //dgvhung.DataSource = tb;
-            //dgvLoaHang.DataSource = bang;
-            //cb_gioiTinh.DataSource = bang;
-            //cb_gioiTinh.DisplayMember = "maPhanQuyen";
-            //cb_gioiTinh.ValueMember = "maPhanQuyen";
+            string str;
+            str = "SELECT * FROM phanquyen";
+            //DataTable bang = new DataTable();
+            tb = kn.LayBang(str);
+
+            cb_chucVu.DataSource = tb;
+            cb_chucVu.DisplayMember = "tenphanQuyen";
+            cb_chucVu.ValueMember = "maphanQuyen";
             str = "select maNhanVien as 'Mã Nhân Viên', tenNhanVien as 'Tên Nhân Viên', diachiNhanVien as 'Địa Chỉ', sdtNhanVien as 'SĐT', nhanvien.maphanquyen as 'Chức Vụ'from nhanvien,phanquyen where phanquyen.maphanquyen= nhanvien.maphanquyen";
             //str = "select a.MANHANVIEN , B.TENPHANQUYEN FROM NHANVIEN AS a ,PHANQUYEN AS b where a.MAPHANQUYEN = b.MAPHANQUYEN;";
             tb = kn.LayBang(str);
@@ -75,22 +74,24 @@ namespace car
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            if (tb_diaChi.Text == "" || tb_tenNhanVien.Text == "" || tb_std.Text == "" || tb_tenDangNhap.Text == "" || tb_matKhau.Text == "")
+            if (tb_diaChi.Text == "" || tb_tenNhanVien.Text == ""||cb_gioiTinh.Text =="" ||  tb_sdt.Text == "" || tb_email.Text == "" || tb_matKhau.Text == "")
             {
                 MessageBox.Show("Nhập đủ thông tin!!!");
                 return;
             }
-            if (tb_std.Text.Trim().Length > 10 )
+            if (tb_sdt.Text.Trim().Length > 10 )
             {
                 MessageBox.Show("Số điện thoại sai");
-                tb_std.Focus();
+                tb_sdt.Focus();
                 return;
             }
             try
             {
-                kn.Mo_KN_CSDL();
-                //string query = "insert into nhanvien values ("+tb_tenNhanVien.Text+","++")";
-                kn.DongKN();
+                
+                string query = "insert into nhanvien values ("+ cb_chucVu.SelectedValue + ",N'"+tb_tenNhanVien.Text.Trim() + "','"+ns_nhanVien.Value+"',N'"+ cb_gioiTinh.Text.Trim()+"',"+tb_sdt.Text.Trim() + ",'"+tb_matKhau.Text.Trim() +"','"+tb_email.Text.Trim() +"',N'"+tb_diaChi.Text.Trim() +"')";
+                kn.CapNhatDL(query);
+                HienThiDL();
+                
             }
             catch
             {
@@ -116,6 +117,25 @@ namespace car
         private void btn_sua_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            if (tb_diaChi.Text == "" || tb_tenNhanVien.Text == "" || cb_gioiTinh.Text == "" || tb_sdt.Text == "" || tb_email.Text == "" || tb_matKhau.Text == "")
+            {
+                MessageBox.Show("Nhập đủ thông tin!!!");
+                return;
+            }
+
+            string str = "delete from nhanvien where emailnhanvien='" + tb_email.Text.Trim()+"'";
+            kn.CapNhatDL(str);
+            HienThiDL();
+        }
+
+        private void btn_troLai_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            main.ShowDialog();
         }
     }
 }

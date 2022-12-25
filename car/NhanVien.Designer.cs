@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tb_std = new Guna.UI.WinForms.GunaTextBox();
+            this.tb_sdt = new Guna.UI.WinForms.GunaTextBox();
             this.tb_diaChi = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_troLai = new System.Windows.Forms.Button();
-            this.tb_tenDangNhap = new Guna.UI.WinForms.GunaTextBox();
+            this.tb_email = new Guna.UI.WinForms.GunaTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.ns_nhanVien = new Guna.UI.WinForms.GunaDateTimePicker();
             this.cb_chucVu = new Guna.UI.WinForms.GunaComboBox();
@@ -136,22 +136,22 @@
             this.panel2.Size = new System.Drawing.Size(1050, 31);
             this.panel2.TabIndex = 16;
             // 
-            // tb_std
+            // tb_sdt
             // 
-            this.tb_std.BaseColor = System.Drawing.Color.White;
-            this.tb_std.BorderColor = System.Drawing.Color.Silver;
-            this.tb_std.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_std.FocusedBaseColor = System.Drawing.Color.White;
-            this.tb_std.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tb_std.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tb_std.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tb_std.Location = new System.Drawing.Point(278, 335);
-            this.tb_std.Name = "tb_std";
-            this.tb_std.PasswordChar = '\0';
-            this.tb_std.SelectedText = "";
-            this.tb_std.Size = new System.Drawing.Size(285, 34);
-            this.tb_std.TabIndex = 23;
-            this.tb_std.TextChanged += new System.EventHandler(this.tb_std_TextChanged);
+            this.tb_sdt.BaseColor = System.Drawing.Color.White;
+            this.tb_sdt.BorderColor = System.Drawing.Color.Silver;
+            this.tb_sdt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_sdt.FocusedBaseColor = System.Drawing.Color.White;
+            this.tb_sdt.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.tb_sdt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.tb_sdt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tb_sdt.Location = new System.Drawing.Point(278, 335);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.PasswordChar = '\0';
+            this.tb_sdt.SelectedText = "";
+            this.tb_sdt.Size = new System.Drawing.Size(285, 34);
+            this.tb_sdt.TabIndex = 23;
+            this.tb_sdt.TextChanged += new System.EventHandler(this.tb_std_TextChanged);
             // 
             // tb_diaChi
             // 
@@ -219,6 +219,7 @@
             this.btn_xoa.TabIndex = 25;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_them
             // 
@@ -242,9 +243,9 @@
             this.label6.ForeColor = System.Drawing.Color.Crimson;
             this.label6.Location = new System.Drawing.Point(54, 444);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(196, 29);
+            this.label6.Size = new System.Drawing.Size(79, 29);
             this.label6.TabIndex = 29;
-            this.label6.Text = "Tên Đăng Nhập";
+            this.label6.Text = "Email";
             // 
             // label5
             // 
@@ -347,22 +348,23 @@
             this.btn_troLai.TabIndex = 41;
             this.btn_troLai.Text = "Trở lại";
             this.btn_troLai.UseVisualStyleBackColor = false;
+            this.btn_troLai.Click += new System.EventHandler(this.btn_troLai_Click);
             // 
-            // tb_tenDangNhap
+            // tb_email
             // 
-            this.tb_tenDangNhap.BaseColor = System.Drawing.Color.White;
-            this.tb_tenDangNhap.BorderColor = System.Drawing.Color.Silver;
-            this.tb_tenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_tenDangNhap.FocusedBaseColor = System.Drawing.Color.White;
-            this.tb_tenDangNhap.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.tb_tenDangNhap.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tb_tenDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tb_tenDangNhap.Location = new System.Drawing.Point(278, 439);
-            this.tb_tenDangNhap.Name = "tb_tenDangNhap";
-            this.tb_tenDangNhap.PasswordChar = '\0';
-            this.tb_tenDangNhap.SelectedText = "";
-            this.tb_tenDangNhap.Size = new System.Drawing.Size(285, 34);
-            this.tb_tenDangNhap.TabIndex = 43;
+            this.tb_email.BaseColor = System.Drawing.Color.White;
+            this.tb_email.BorderColor = System.Drawing.Color.Silver;
+            this.tb_email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_email.FocusedBaseColor = System.Drawing.Color.White;
+            this.tb_email.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.tb_email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.tb_email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tb_email.Location = new System.Drawing.Point(278, 439);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.PasswordChar = '\0';
+            this.tb_email.SelectedText = "";
+            this.tb_email.Size = new System.Drawing.Size(285, 34);
+            this.tb_email.TabIndex = 43;
             // 
             // label11
             // 
@@ -374,7 +376,6 @@
             this.label11.Size = new System.Drawing.Size(105, 29);
             this.label11.TabIndex = 42;
             this.label11.Text = "Chức vụ";
-            //this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // ns_nhanVien
             // 
@@ -410,9 +411,6 @@
             this.cb_chucVu.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cb_chucVu.ForeColor = System.Drawing.Color.Black;
             this.cb_chucVu.FormattingEnabled = true;
-            this.cb_chucVu.Items.AddRange(new object[] {
-            "Nhân viên",
-            "Quản lý"});
             this.cb_chucVu.Location = new System.Drawing.Point(278, 387);
             this.cb_chucVu.Name = "cb_chucVu";
             this.cb_chucVu.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -510,7 +508,7 @@
             this.Controls.Add(this.cb_gioiTinh);
             this.Controls.Add(this.cb_chucVu);
             this.Controls.Add(this.ns_nhanVien);
-            this.Controls.Add(this.tb_tenDangNhap);
+            this.Controls.Add(this.tb_email);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btn_troLai);
             this.Controls.Add(this.label10);
@@ -524,7 +522,7 @@
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.tb_std);
+            this.Controls.Add(this.tb_sdt);
             this.Controls.Add(this.tb_diaChi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -553,7 +551,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
-        private Guna.UI.WinForms.GunaTextBox tb_std;
+        private Guna.UI.WinForms.GunaTextBox tb_sdt;
         private Guna.UI.WinForms.GunaTextBox tb_diaChi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
@@ -569,7 +567,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_troLai;
-        private Guna.UI.WinForms.GunaTextBox tb_tenDangNhap;
+        private Guna.UI.WinForms.GunaTextBox tb_email;
         private System.Windows.Forms.Label label11;
         private Guna.UI.WinForms.GunaDateTimePicker ns_nhanVien;
         private Guna.UI.WinForms.GunaComboBox cb_chucVu;
