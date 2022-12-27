@@ -132,7 +132,7 @@
             this.btn_dangNhap.Radius = 10;
             this.btn_dangNhap.Size = new System.Drawing.Size(200, 57);
             this.btn_dangNhap.TabIndex = 2;
-            this.btn_dangNhap.Text = "     đăng nhập";
+            this.btn_dangNhap.Text = "        đăng nhập";
             this.btn_dangNhap.Click += new System.EventHandler(this.btn_dangNhap_Click);
             this.btn_dangNhap.Enter += new System.EventHandler(this.login_Load);
             // 
@@ -195,6 +195,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.Load += new System.EventHandler(this.login_Load);
             this.Enter += new System.EventHandler(this.login_Load);

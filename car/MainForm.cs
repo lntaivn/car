@@ -12,6 +12,7 @@ namespace car
 {
     public partial class MainForm : Form
     {
+        help h = new help();
         public MainForm()
         {
             InitializeComponent();
@@ -21,11 +22,12 @@ namespace car
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            help h = new help();
-            if (h.Checkper())
-                MessageBox.Show("quan ly");
+            if (h.Checkper() != 3) { }
             else
-                MessageBox.Show("Nhan vien");
+            {
+                login login = new login();  
+                login.ShowDialog(); 
+            }
 
         }
 
@@ -34,20 +36,35 @@ namespace car
             Application.Exit();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btn_nhanVien_Click(object sender, EventArgs e)
         {
-            NhanVien nhanVien = new NhanVien(); 
-            nhanVien.Show();
+            if (h.Checkper()==2)
+            {
+                NhanVien nhanVien = new NhanVien();
+                nhanVien.Show();
+            }
+            else
+                MessageBox.Show("Chức năng này không giành cho bạn !");
+           
+        }
+
+        private void btn_dangXuat_Click(object sender, EventArgs e)
+        {
+            login login = new login();
+            login.ShowDialog();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+            login.ID_USER = "";
+            
+        }
+
+        private void btn_NSX_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

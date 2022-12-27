@@ -13,18 +13,20 @@ namespace car
     class help
     {
 
-        public Boolean Checkper()
+        public int Checkper()
         {
             string code = login.ID_USER;
-            Boolean check = false;
+            int check = 1;
             if ("1" == code)
             {
-                check = false;
+                check = 1;
             }
             else if ("2" == code)
             {
-                check= true;
+                check= 2;
             }
+                else
+                check = 3;
             return check;
         }
     }

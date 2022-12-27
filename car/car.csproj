@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,8 +94,20 @@
     <Compile Include="NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="nsx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nsx.Designer.cs">
+      <DependentUpon>nsx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="thongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thongKe.Designer.cs">
+      <DependentUpon>thongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Xe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +132,9 @@
     <EmbeddedResource Include="NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nsx.resx">
+      <DependentUpon>nsx.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -129,6 +145,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="thongKe.resx">
+      <DependentUpon>thongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Xe.resx">
       <DependentUpon>Xe.cs</DependentUpon>
     </EmbeddedResource>

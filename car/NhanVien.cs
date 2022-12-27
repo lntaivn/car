@@ -137,5 +137,16 @@ namespace car
             MainForm main = new MainForm();
             main.ShowDialog();
         }
+
+        private void NhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            DialogResult result;
+            result = MessageBox.Show("Bạn có muốn thoát", "Thong báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

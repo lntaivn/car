@@ -28,13 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Xe));
             this.button3 = new System.Windows.Forms.Button();
-            this.gunaDataGridView1 = new Guna.UI.WinForms.GunaDataGridView();
-            this.label10 = new System.Windows.Forms.Label();
             this.gunaTextBox4 = new Guna.UI.WinForms.GunaTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gunaTextBox5 = new Guna.UI.WinForms.GunaTextBox();
@@ -56,7 +51,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).BeginInit();
+            this.gunaTextBox7 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox8 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox9 = new Guna.UI.WinForms.GunaTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.gunaTextBox10 = new Guna.UI.WinForms.GunaTextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.gunaTextBox11 = new Guna.UI.WinForms.GunaTextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.gunaTextBox12 = new Guna.UI.WinForms.GunaTextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.gunaTextBox13 = new Guna.UI.WinForms.GunaTextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,82 +76,12 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(360, 477);
+            this.button3.Location = new System.Drawing.Point(395, 556);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 42);
             this.button3.TabIndex = 63;
             this.button3.Text = "Trở lại";
             this.button3.UseVisualStyleBackColor = false;
-            // 
-            // gunaDataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gunaDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gunaDataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gunaDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gunaDataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gunaDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gunaDataGridView1.EnableHeadersVisualStyles = false;
-            this.gunaDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.Location = new System.Drawing.Point(492, 197);
-            this.gunaDataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaDataGridView1.Name = "gunaDataGridView1";
-            this.gunaDataGridView1.RowHeadersVisible = false;
-            this.gunaDataGridView1.RowHeadersWidth = 62;
-            this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(274, 269);
-            this.gunaDataGridView1.TabIndex = 62;
-            this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.gunaDataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.gunaDataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.gunaDataGridView1.ThemeStyle.ReadOnly = false;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gunaDataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Crimson;
-            this.label10.Location = new System.Drawing.Point(549, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(134, 29);
-            this.label10.TabIndex = 61;
-            this.label10.Text = "Danh sách";
             // 
             // gunaTextBox4
             // 
@@ -158,7 +96,7 @@
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.SelectedText = "";
-            this.gunaTextBox4.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox4.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox4.TabIndex = 58;
             // 
             // label5
@@ -185,7 +123,7 @@
             this.gunaTextBox5.Name = "gunaTextBox5";
             this.gunaTextBox5.PasswordChar = '\0';
             this.gunaTextBox5.SelectedText = "";
-            this.gunaTextBox5.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox5.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox5.TabIndex = 56;
             // 
             // gunaTextBox6
@@ -201,7 +139,7 @@
             this.gunaTextBox6.Name = "gunaTextBox6";
             this.gunaTextBox6.PasswordChar = '\0';
             this.gunaTextBox6.SelectedText = "";
-            this.gunaTextBox6.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox6.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox6.TabIndex = 55;
             // 
             // label7
@@ -239,7 +177,7 @@
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
             this.gunaTextBox3.SelectedText = "";
-            this.gunaTextBox3.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox3.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox3.TabIndex = 52;
             // 
             // label6
@@ -247,11 +185,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Crimson;
-            this.label6.Location = new System.Drawing.Point(57, 389);
+            this.label6.Location = new System.Drawing.Point(57, 487);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 29);
+            this.label6.Size = new System.Drawing.Size(96, 29);
             this.label6.TabIndex = 51;
-            this.label6.Text = "Loại";
+            this.label6.Text = "Hộp số";
             // 
             // button5
             // 
@@ -260,7 +198,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(129, 477);
+            this.button5.Location = new System.Drawing.Point(164, 556);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 42);
             this.button5.TabIndex = 50;
@@ -274,7 +212,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(244, 477);
+            this.button2.Location = new System.Drawing.Point(279, 556);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(110, 42);
             this.button2.TabIndex = 49;
@@ -288,7 +226,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(14, 477);
+            this.button1.Location = new System.Drawing.Point(49, 556);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 42);
             this.button1.TabIndex = 48;
@@ -308,7 +246,7 @@
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox2.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox2.TabIndex = 47;
             // 
             // gunaTextBox1
@@ -324,7 +262,7 @@
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(144, 52);
+            this.gunaTextBox1.Size = new System.Drawing.Size(181, 34);
             this.gunaTextBox1.TabIndex = 46;
             // 
             // label4
@@ -348,14 +286,15 @@
             this.label1.Size = new System.Drawing.Size(117, 29);
             this.label1.TabIndex = 44;
             this.label1.Text = "Số lượng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Crimson;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 546);
+            this.panel2.Location = new System.Drawing.Point(0, 619);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(825, 31);
+            this.panel2.Size = new System.Drawing.Size(1050, 31);
             this.panel2.TabIndex = 43;
             // 
             // btnOut
@@ -365,7 +304,7 @@
             this.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOut.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOut.ForeColor = System.Drawing.Color.White;
-            this.btnOut.Location = new System.Drawing.Point(788, 0);
+            this.btnOut.Location = new System.Drawing.Point(1012, -1);
             this.btnOut.Name = "btnOut";
             this.btnOut.Size = new System.Drawing.Size(38, 48);
             this.btnOut.TabIndex = 4;
@@ -405,7 +344,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 131);
+            this.panel1.Size = new System.Drawing.Size(1050, 131);
             this.panel1.TabIndex = 42;
             // 
             // gunaCirclePictureBox1
@@ -420,14 +359,215 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
+            // gunaTextBox7
+            // 
+            this.gunaTextBox7.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox7.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox7.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox7.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox7.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox7.Location = new System.Drawing.Point(279, 487);
+            this.gunaTextBox7.Name = "gunaTextBox7";
+            this.gunaTextBox7.PasswordChar = '\0';
+            this.gunaTextBox7.SelectedText = "";
+            this.gunaTextBox7.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox7.TabIndex = 65;
+            // 
+            // gunaTextBox8
+            // 
+            this.gunaTextBox8.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox8.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox8.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox8.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox8.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox8.Location = new System.Drawing.Point(278, 432);
+            this.gunaTextBox8.Name = "gunaTextBox8";
+            this.gunaTextBox8.PasswordChar = '\0';
+            this.gunaTextBox8.SelectedText = "";
+            this.gunaTextBox8.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox8.TabIndex = 67;
+            // 
+            // gunaTextBox9
+            // 
+            this.gunaTextBox9.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox9.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox9.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox9.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox9.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox9.Location = new System.Drawing.Point(753, 248);
+            this.gunaTextBox9.Name = "gunaTextBox9";
+            this.gunaTextBox9.PasswordChar = '\0';
+            this.gunaTextBox9.SelectedText = "";
+            this.gunaTextBox9.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox9.TabIndex = 75;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Crimson;
+            this.label10.Location = new System.Drawing.Point(532, 255);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(121, 29);
+            this.label10.TabIndex = 74;
+            this.label10.Text = "Số túi khí";
+            // 
+            // gunaTextBox10
+            // 
+            this.gunaTextBox10.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox10.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox10.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox10.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox10.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox10.Location = new System.Drawing.Point(754, 303);
+            this.gunaTextBox10.Name = "gunaTextBox10";
+            this.gunaTextBox10.PasswordChar = '\0';
+            this.gunaTextBox10.SelectedText = "";
+            this.gunaTextBox10.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox10.TabIndex = 73;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Crimson;
+            this.label12.Location = new System.Drawing.Point(532, 308);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(88, 29);
+            this.label12.TabIndex = 72;
+            this.label12.Text = "Số loa";
+            // 
+            // gunaTextBox11
+            // 
+            this.gunaTextBox11.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox11.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox11.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox11.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox11.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox11.Location = new System.Drawing.Point(753, 198);
+            this.gunaTextBox11.Name = "gunaTextBox11";
+            this.gunaTextBox11.PasswordChar = '\0';
+            this.gunaTextBox11.SelectedText = "";
+            this.gunaTextBox11.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox11.TabIndex = 71;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Crimson;
+            this.label13.Location = new System.Drawing.Point(532, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 29);
+            this.label13.TabIndex = 70;
+            this.label13.Text = "Đèn";
+            // 
+            // gunaTextBox12
+            // 
+            this.gunaTextBox12.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox12.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox12.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox12.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox12.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox12.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox12.Location = new System.Drawing.Point(753, 151);
+            this.gunaTextBox12.Name = "gunaTextBox12";
+            this.gunaTextBox12.PasswordChar = '\0';
+            this.gunaTextBox12.SelectedText = "";
+            this.gunaTextBox12.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox12.TabIndex = 69;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Crimson;
+            this.label14.Location = new System.Drawing.Point(532, 151);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 29);
+            this.label14.TabIndex = 68;
+            this.label14.Text = "Màu xe";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Crimson;
+            this.label9.Location = new System.Drawing.Point(57, 432);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 29);
+            this.label9.TabIndex = 76;
+            this.label9.Text = "Động cơ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Crimson;
+            this.label11.Location = new System.Drawing.Point(57, 382);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 29);
+            this.label11.TabIndex = 77;
+            this.label11.Text = "Ảnh";
+            // 
+            // gunaTextBox13
+            // 
+            this.gunaTextBox13.BaseColor = System.Drawing.Color.White;
+            this.gunaTextBox13.BorderColor = System.Drawing.Color.Silver;
+            this.gunaTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox13.FocusedBaseColor = System.Drawing.Color.White;
+            this.gunaTextBox13.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaTextBox13.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox13.Location = new System.Drawing.Point(753, 361);
+            this.gunaTextBox13.Name = "gunaTextBox13";
+            this.gunaTextBox13.PasswordChar = '\0';
+            this.gunaTextBox13.SelectedText = "";
+            this.gunaTextBox13.Size = new System.Drawing.Size(181, 34);
+            this.gunaTextBox13.TabIndex = 79;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Crimson;
+            this.label15.Location = new System.Drawing.Point(531, 366);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(77, 29);
+            this.label15.TabIndex = 78;
+            this.label15.Text = "Mô tả";
+            // 
             // Xe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 577);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.gunaDataGridView1);
+            this.ClientSize = new System.Drawing.Size(1050, 650);
+            this.Controls.Add(this.gunaTextBox13);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.gunaTextBox9);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.gunaTextBox10);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.gunaTextBox11);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.gunaTextBox12);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.gunaTextBox8);
+            this.Controls.Add(this.gunaTextBox7);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.gunaTextBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.gunaTextBox5);
@@ -450,7 +590,6 @@
             this.Name = "Xe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Xe";
-            ((System.ComponentModel.ISupportInitialize)(this.gunaDataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
@@ -462,8 +601,6 @@
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private Guna.UI.WinForms.GunaDataGridView gunaDataGridView1;
-        private System.Windows.Forms.Label label10;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox4;
         private System.Windows.Forms.Label label5;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox5;
@@ -485,5 +622,19 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox7;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox8;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox9;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox10;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox11;
+        private System.Windows.Forms.Label label13;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox13;
+        private System.Windows.Forms.Label label15;
     }
 }
