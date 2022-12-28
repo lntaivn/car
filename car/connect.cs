@@ -14,7 +14,7 @@ namespace car
         SqlCommand Lenh;
         public connect()
         {
-            string str = "Data Source=.;Integrated Security = True; Initial Catalog = xeOTo";
+            string str = "Data Source=DESKTOP-D13QGHP;Integrated Security = True; Initial Catalog = xeOTo";
             kn = new SqlConnection();
             kn.ConnectionString = str;
 

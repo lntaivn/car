@@ -16,7 +16,7 @@ namespace car
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new nsx());
+            Application.Run(new login());
         }
     }
 }

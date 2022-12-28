@@ -41,7 +41,7 @@
             // pictureBox_xe
             // 
             this.pictureBox_xe.Image = global::car.Properties.Resources.image_2022_12_12_214046446;
-            this.pictureBox_xe.Location = new System.Drawing.Point(78, 83);
+            this.pictureBox_xe.Location = new System.Drawing.Point(96, 91);
             this.pictureBox_xe.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox_xe.Name = "pictureBox_xe";
             this.pictureBox_xe.Size = new System.Drawing.Size(250, 201);

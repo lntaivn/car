@@ -42,20 +42,21 @@
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.btn_thongKe = new System.Windows.Forms.Button();
             this.btn_NSX = new System.Windows.Forms.Button();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Crimson;
+            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Controls.Add(this.btnOut);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1050, 131);
+            this.panel1.Size = new System.Drawing.Size(1191, 61);
             this.panel1.TabIndex = 0;
             // 
             // btnOut
@@ -65,9 +66,9 @@
             this.btnOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOut.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOut.ForeColor = System.Drawing.Color.White;
-            this.btnOut.Location = new System.Drawing.Point(1009, 3);
+            this.btnOut.Location = new System.Drawing.Point(1131, 0);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(38, 48);
+            this.btnOut.Size = new System.Drawing.Size(60, 60);
             this.btnOut.TabIndex = 4;
             this.btnOut.Text = "X";
             this.btnOut.UseVisualStyleBackColor = false;
@@ -78,18 +79,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(360, 22);
+            this.label3.Location = new System.Drawing.Point(461, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(334, 29);
+            this.label3.Size = new System.Drawing.Size(254, 29);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Cửa hàng xem Ô TÔ Tài KA";
+            this.label3.Text = "Cửa hàng ô tô TAIKA";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 22);
+            this.label2.Location = new System.Drawing.Point(25, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 29);
             this.label2.TabIndex = 2;
@@ -102,9 +103,9 @@
             this.btn_xe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_xe.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_xe.ForeColor = System.Drawing.Color.White;
-            this.btn_xe.Location = new System.Drawing.Point(36, 151);
+            this.btn_xe.Location = new System.Drawing.Point(121, 251);
             this.btn_xe.Name = "btn_xe";
-            this.btn_xe.Size = new System.Drawing.Size(154, 48);
+            this.btn_xe.Size = new System.Drawing.Size(200, 50);
             this.btn_xe.TabIndex = 2;
             this.btn_xe.Text = "Xe";
             this.btn_xe.UseVisualStyleBackColor = false;
@@ -116,9 +117,9 @@
             this.btn_banXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_banXe.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_banXe.ForeColor = System.Drawing.Color.White;
-            this.btn_banXe.Location = new System.Drawing.Point(423, 151);
+            this.btn_banXe.Location = new System.Drawing.Point(349, 251);
             this.btn_banXe.Name = "btn_banXe";
-            this.btn_banXe.Size = new System.Drawing.Size(154, 48);
+            this.btn_banXe.Size = new System.Drawing.Size(200, 50);
             this.btn_banXe.TabIndex = 3;
             this.btn_banXe.Text = "Bán xe";
             this.btn_banXe.UseVisualStyleBackColor = false;
@@ -130,9 +131,9 @@
             this.btn_nhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nhanVien.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_nhanVien.Location = new System.Drawing.Point(630, 151);
+            this.btn_nhanVien.Location = new System.Drawing.Point(349, 327);
             this.btn_nhanVien.Name = "btn_nhanVien";
-            this.btn_nhanVien.Size = new System.Drawing.Size(154, 48);
+            this.btn_nhanVien.Size = new System.Drawing.Size(200, 50);
             this.btn_nhanVien.TabIndex = 5;
             this.btn_nhanVien.Text = "Nhân viên";
             this.btn_nhanVien.UseVisualStyleBackColor = false;
@@ -145,20 +146,21 @@
             this.btn_khachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_khachHang.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_khachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_khachHang.Location = new System.Drawing.Point(222, 151);
+            this.btn_khachHang.Location = new System.Drawing.Point(121, 327);
             this.btn_khachHang.Name = "btn_khachHang";
-            this.btn_khachHang.Size = new System.Drawing.Size(154, 48);
+            this.btn_khachHang.Size = new System.Drawing.Size(200, 50);
             this.btn_khachHang.TabIndex = 6;
             this.btn_khachHang.Text = "Khách hàng";
             this.btn_khachHang.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Crimson;
+            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 619);
+            this.panel2.Location = new System.Drawing.Point(0, 637);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1050, 31);
+            this.panel2.Size = new System.Drawing.Size(1191, 55);
             this.panel2.TabIndex = 7;
             // 
             // btn_dangXuat
@@ -168,7 +170,7 @@
             this.btn_dangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_dangXuat.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_dangXuat.ForeColor = System.Drawing.Color.White;
-            this.btn_dangXuat.Location = new System.Drawing.Point(423, 565);
+            this.btn_dangXuat.Location = new System.Drawing.Point(1007, 565);
             this.btn_dangXuat.Name = "btn_dangXuat";
             this.btn_dangXuat.Size = new System.Drawing.Size(154, 48);
             this.btn_dangXuat.TabIndex = 4;
@@ -180,7 +182,7 @@
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(277, 281);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(658, 196);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
             this.gunaCirclePictureBox1.Size = new System.Drawing.Size(440, 278);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,9 +197,9 @@
             this.btn_thongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thongKe.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_thongKe.ForeColor = System.Drawing.Color.White;
-            this.btn_thongKe.Location = new System.Drawing.Point(833, 151);
+            this.btn_thongKe.Location = new System.Drawing.Point(349, 402);
             this.btn_thongKe.Name = "btn_thongKe";
-            this.btn_thongKe.Size = new System.Drawing.Size(154, 48);
+            this.btn_thongKe.Size = new System.Drawing.Size(200, 50);
             this.btn_thongKe.TabIndex = 8;
             this.btn_thongKe.Text = "Thống kê";
             this.btn_thongKe.UseVisualStyleBackColor = false;
@@ -209,19 +211,30 @@
             this.btn_NSX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NSX.Font = new System.Drawing.Font("Microsoft YaHei UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NSX.ForeColor = System.Drawing.Color.White;
-            this.btn_NSX.Location = new System.Drawing.Point(125, 205);
+            this.btn_NSX.Location = new System.Drawing.Point(121, 402);
             this.btn_NSX.Name = "btn_NSX";
-            this.btn_NSX.Size = new System.Drawing.Size(169, 48);
+            this.btn_NSX.Size = new System.Drawing.Size(200, 50);
             this.btn_NSX.TabIndex = 9;
             this.btn_NSX.Text = "Nhà sản xuất";
             this.btn_NSX.UseVisualStyleBackColor = false;
             this.btn_NSX.Click += new System.EventHandler(this.btn_NSX_Click);
             // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(115, 196);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(136, 32);
+            this.gunaLabel1.TabIndex = 10;
+            this.gunaLabel1.Text = "Chức năng";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 650);
+            this.ClientSize = new System.Drawing.Size(1191, 692);
+            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.btn_NSX);
             this.Controls.Add(this.btn_thongKe);
             this.Controls.Add(this.btn_dangXuat);
@@ -240,8 +253,11 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -260,5 +276,6 @@
         private System.Windows.Forms.Button btn_dangXuat;
         private System.Windows.Forms.Button btn_thongKe;
         private System.Windows.Forms.Button btn_NSX;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
