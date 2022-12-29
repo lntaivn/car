@@ -45,7 +45,7 @@ namespace car
                 nhanVien.Show();
             }
             else
-                MessageBox.Show("Chức năng này không giành cho bạn !");
+                MessageBox.Show("Chức năng này không dành cho bạn !");
            
         }
 
